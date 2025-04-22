@@ -1,0 +1,155 @@
+{
+  "welcome": "Welcome",
+  "goodbye": "Goodbye",
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "HeroSection": {
+    "title": "Discover the<br></br> Perfect Site for Your Business with <br></br><b>Accuracy and Ease</b>",
+    "subtitle": "Unlock the full potential of your business through innovative location insight powered by Telkomsel, ensuring precise and data-driven decision-making.",
+    "cta": "Schedule a Demo"
+  },
+  "BusinessFeatures": {
+    "title": "Grow Your Business with Confidence",
+    "cta": "Schedule a Demo",
+    "features": [
+      {
+        "title": "Covers 97% of the Population",
+        "description": "SiteSense reaches the majority of the population, making it easier for you to identify locations with high potential anytime and anywhere."
+      },
+      {
+        "title": "Cutting-Edge Technology",
+        "description": "Powered by state-of-the-art machine learning technology and behavioral analysis, SiteSense produces accurate and actionable insights."
+      },
+      {
+        "title": "Easy to Use",
+        "description": "SiteSense simplifies location intelligence and provides actionable insights. With its user-friendly interface, SiteSense helps deliver smart, efficient, and hassle-free solutions for your business."
+      }
+    ]
+  },
+  "HowItWorks": {
+    "sectionTitle": "How SiteSense Works",
+    "sectionSubtitle": "How We Make Location Selection Easy",
+    "sectionDescription": "Here are the steps to get started with SiteSense:",
+    "step1": {
+      "step": "STEP 1",
+      "title": "Define Analysis Points or Areas",
+      "description": "Choose specific locations or areas based on cities or districts to get optimal location analysis and data-driven recommendations."
+    },
+    "step2": {
+      "step": "STEP 2",
+      "title": "Set Relevant Data Parameters",
+      "description": "Configure preferences such as population density, points of interest, or operational time analysis to match your business needs."
+    },
+    "step3": {
+      "step": "STEP 3",
+      "title": "Get Location Insights by Ranking or Score",
+      "description": "Discover the best location insights or choose strategic locations based on personalized recommendations according to your specified data parameters."
+    }
+  },
+  "FeaturesSection": {
+    "title": "Data-Driven Location Intelligence for Your Business",
+    "description": "SiteSense helps your business grow quickly by finding the best locations for expansion. With accurate data analysis, we provide strategic location recommendations, so you can validate expansion decisions more quickly and accurately."
+  },
+   
+
+  "FeaturesSectionV2": {
+    "title": "Location Intelligence for Your Business",
+    "features": [
+      {
+        "title": "Comprehensive",
+        "description": "SiteSense harnesses the power of Indonesia’s largest telco data ecosystem, offering deep insights covering 97% of the population."
+      },
+      {
+        "title": "Accurate",
+        "description": "Leveraging mobile positioning and behavior data, SiteSense delivers accurate insights to support data-driven business decision making with confidence."
+      },
+      {
+        "title": "Effortless",
+        "description": "Through our innovative platform, businesses just need to define relevant data parameters to get strategic locations recommendation, eliminating the need for time-consuming survey and reducing operational costs."
+      }
+    ]
+  },
+  "FAQSection": {
+    "title": "Frequently Asked Questions",
+    "faqs": [
+      {
+        "question": "What is SiteSense?",
+        "answer": "SiteSense is a data-driven location analysis platform that helps businesses find and validate strategic locations for expansion. We use advanced technology and comprehensive data to provide accurate location recommendations."
+      },
+      {
+        "question": "How does SiteSense work?",
+        "answer": "SiteSense works by analyzing various factors such as demographics, traffic, competition, and consumer patterns in the location you are interested in. We use real-time and historical data to provide accurate insights into the potential of a location."
+      },
+      {
+        "question": "How long does the SiteSense analysis process take?",
+        "answer": "The location analysis process with SiteSense can be completed within 1-2 weeks, depending on the complexity and scope of the area analyzed. We will provide a clear timeline at the beginning of the process."
+      },
+      {
+        "question": "What data does SiteSense analyze?",
+        "answer": "SiteSense analyzes various types of data including population demographics, traffic patterns, purchasing power, business density, area growth, and other relevant factors according to your business type."
+      },
+      {
+        "question": "Does SiteSense guarantee my business success?",
+        "answer": "SiteSense provides recommendations based on accurate data analysis, but business success depends on various factors. We help minimize risk by providing reliable insights for decision making."
+      },
+      {
+        "question": "How do I get started with SiteSense?",
+        "answer": "To get started with SiteSense, you can fill out the contact form or contact our team for a demo. We will help explain the analysis process and create a package that suits your business needs."
+      }
+    ]
+  },
+  "CTASection": {
+    "title": "Be the first <br></br>to access <b>SiteSense</b>",
+    "description": "Fill out the form below and get attractive offers from us.",
+    "form": {
+      "fullName": "Full Name",
+      "businessName": "Business Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "agreement": "By submitting this form, you agree to our <a>Terms and Conditions</a>",
+      "submit": "Submit"
+    }
+  },
+  "BenefitsSection": {
+    "title": "Eliminate Doubts in Expansion",
+    "subtitle": "SiteSense Advantages",
+    "cta": "Schedule a Demo",
+    "accuracy": "Data Accuracy",
+    "benefits": [
+      {
+        "title": "Comprehensive Data Analysis",
+        "description": "Get deep insights into market potential with demographic, competitor, and consumer pattern analysis."
+      },
+      {
+        "title": "Strategic Location Mapping",
+        "description": "Identify potential locations based on big data analysis and consumer movement patterns in the target area."
+      },
+      {
+        "title": "Business Performance Prediction",
+        "description": "Estimate potential revenue and ROI based on historical data and market trends in the selected location."
+      },
+      {
+        "title": "Target Demographic Analysis",
+        "description": "Understand the characteristics and behavior of potential consumers around your targeted location."
+      }
+    ]
+  },
+  "SiteHeader": {
+    "home": "Home",
+    "about": "About SiteSense",
+    "howItWorks": "How It Works",
+    "faq": "FAQ",
+    "scheduleDemo": "Schedule a Demo"
+  },
+  "SiteFooter": {
+    "language": "Language",
+    "privacyPolicy": "Privacy & Policy",
+    "termsConditions": "Terms & Conditions",
+    "copyright": "© PT Telekomunikasi Selular, 2025.",
+    "about": "About SiteSense",
+    "howItWorks": "How It Works",
+    "faq": "FAQ"
+  }
+}

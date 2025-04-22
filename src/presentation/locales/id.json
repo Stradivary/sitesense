@@ -1,0 +1,148 @@
+{
+  "HeroSection": {
+    "title": "Temukan<br></br> Lokasi Ideal Untuk<br></br>Bisnis Anda Dengan<br></br> <b>Akurat dan Mudah</b>",
+    "cta": "Jadwalkan Demo",
+    "subtitle": "Maksimalkan potensi bisnis Anda dengan insight lokasi inovatif dari Telkomsel. Dengan data yang akurat, keputusan bisnis kini lebih tepat."
+  },
+  "HowItWorks": {
+    "sectionTitle": "Cara Kerja SiteSense",
+    "sectionSubtitle": "Bagaimana Kami Mempermudah Pemilihan Lokasi",
+    "sectionDescription": "Berikut adalah langkah-langkah untuk memulai dengan SiteSense:",
+    "step1": {
+      "step": "LANGKAH 1",
+      "title": "Tentukan Titik atau Area Analisis",
+      "description": "Pilih lokasi spesifik atau area berdasarkan kota atau distrik untuk mendapatkan analisis lokasi optimal dan rekomendasi berbasis data."
+    },
+    "step2": {
+      "step": "LANGKAH 2",
+      "title": "Tetapkan Parameter Data yang Relevan",
+      "description": "Atur preferensi parameter seperti kepadatan populasi, titik lokasi yang relevan (Point of Interest), atau analisis waktu operasional agar sesuai dengan kebutuhan bisnis Anda."
+    },
+    "step3": {
+      "step": "LANGKAH 3",
+      "title": "Dapatkan Insight Lokasi Berdasarkan Peringkat atau Skor",
+      "description": "Dapatkan rekomendasi lokasi strategis dengan survei yang hemat waktu dan biaya operasional, melalui platform inovatif kami."
+    }
+  },
+  "FeaturesSection": {
+    "title": "Intelijen Lokasi Berbasis Data untuk Bisnis Anda",
+    "description": "SiteSense membantu bisnis Anda tumbuh dengan cepat dengan menemukan lokasi terbaik untuk ekspansi. Dengan analisis data yang akurat, kami memberikan rekomendasi lokasi strategis, sehingga Anda dapat memvalidasi keputusan ekspansi dengan lebih cepat dan tepat."
+  },
+  "FeaturesSectionV2": {
+    "title": "Lokasi Bisnis Yang Tepat Dimulai dari Data yang Akurat",
+    "features": [
+      {
+        "title": "Lengkap",
+        "description": "Dapatkan insight mendalam yang mencakup 97% populasi dengan SiteSense yang memanfaatkan ekosistem data telekomunikasi terbesar di Indonesia."
+      },
+      {
+        "title": "Akurat",
+        "description": "Dengan teknologi pemetaan berbasis mobile dan analisis perilaku, SiteSense menghadirkan insight lokasi yang akurat untuk mendukung pengambilan keputusan berbasis data."
+      },
+      {
+        "title": "Praktis",
+        "description": "Dapatkan rekomendasi lokasi strategis dengan survei yang hemat waktu dan biaya operasional, melalui platform inovatif kami."
+      }
+    ]
+  },
+  "FAQSection": {
+    "title": "Pertanyaan Umum",
+    "faqs": [
+      {
+        "question": "Apa itu SiteSense?",
+        "answer": "SiteSense adalah platform analisis lokasi berbasis data yang membantu bisnis menemukan dan memvalidasi lokasi strategis untuk ekspansi. Kami menggunakan teknologi canggih dan data komprehensif untuk memberikan rekomendasi lokasi yang akurat."
+      },
+      {
+        "question": "Bagaimana cara kerja SiteSense?",
+        "answer": "SiteSense bekerja dengan menganalisis berbagai faktor seperti demografi, lalu lintas, kompetisi, dan pola konsumen di lokasi yang Anda minati. Kami menggunakan data real-time dan historis untuk memberikan wawasan yang akurat tentang potensi suatu lokasi."
+      },
+      {
+        "question": "Berapa lama proses analisis SiteSense?",
+        "answer": "Proses analisis lokasi dengan SiteSense dapat diselesaikan dalam waktu 1-2 minggu, tergantung pada kompleksitas dan cakupan area yang dianalisis. Kami akan memberikan timeline yang jelas di awal proses."
+      },
+      {
+        "question": "Data apa saja yang dianalisis oleh SiteSense?",
+        "answer": "SiteSense menganalisis berbagai jenis data termasuk demografi penduduk, pola lalu lintas, daya beli masyarakat, kepadatan bisnis sejenis, pertumbuhan wilayah, dan faktor-faktor relevan lainnya sesuai dengan jenis usaha Anda."
+      },
+      {
+        "question": "Apakah SiteSense menjamin kesuksesan bisnis saya?",
+        "answer": "SiteSense memberikan rekomendasi berdasarkan analisis data yang akurat, namun keberhasilan bisnis bergantung pada berbagai faktor. Kami membantu meminimalkan risiko dengan memberikan wawasan yang dapat diandalkan untuk pengambilan keputusan."
+      },
+      {
+        "question": "Bagaimana cara memulai dengan SiteSense?",
+        "answer": "Untuk memulai dengan SiteSense, Anda dapat mengisi formulir kontak atau menghubungi tim kami untuk demo. Kami akan membantu menjelaskan proses analisis dan menyusun paket yang sesuai dengan kebutuhan bisnis Anda."
+      }
+    ]
+  },
+  "CTASection": {
+    "title": "Jadilah yang pertama <br></br>mengakses <b>SiteSense</b>",
+    "description": "Isi formulir di bawah ini dan dapatkan penawaran menarik dari kami.",
+    "form": {
+      "fullName": "Nama Lengkap",
+      "businessName": "Nama Usaha/Bisnis",
+      "email": "Email",
+      "phone": "Nomor Telepon",
+      "agreement": "Dengan ini saya telah menyetujui <a>syarat dan ketentuan</a> yang berlaku.",
+      "submit": "Kirim"
+    }
+  },
+  "BenefitsSection": {
+    "title": "Hilangkan Keraguan dalam Ekspansi",
+    "subtitle": "Keunggulan SiteSense",
+    "cta": "Jadwalkan Demo",
+    "accuracy": "Akurasi Data",
+    "benefits": [
+      {
+        "title": "Analisis Data Komprehensif",
+        "description": "Dapatkan wawasan mendalam tentang potensi pasar dengan analisis data demografi, kompetitor, dan pola konsumen."
+      },
+      {
+        "title": "Pemetaan Lokasi Strategis",
+        "description": "Identifikasi lokasi potensial berdasarkan analisis big data dan pola pergerakan konsumen di area target."
+      },
+      {
+        "title": "Prediksi Performa Bisnis",
+        "description": "Estimasi potensi pendapatan dan ROI berdasarkan data historis dan tren pasar di lokasi terpilih."
+      },
+      {
+        "title": "Analisis Demografi Target",
+        "description": "Pahami karakteristik dan perilaku konsumen potensial di sekitar lokasi yang Anda targetkan."
+      }
+    ]
+  },
+  "BusinessFeatures": {
+    "title": "Kembangkan Bisnis dengan Percaya Diri",
+    "cta": "Jadwalkan Demo",
+    "features": [
+      {
+        "title": "Mencakup 97% Populasi",
+        "description": "SiteSense menjangkau mayoritas populasi sehingga memudahkan Anda mengidentifikasi lokasi dengan potensi tinggi kapan saja dan di mana saja."
+      },
+      {
+        "title": "Teknologi Terkini",
+        "description": "Didukung oleh teknologi machine learning mutakhir dan analisis perilaku, SiteSense menghasilkan wawasan yang akurat dan dapat ditindaklanjuti."
+      },
+      {
+        "title": "Mudah Digunakan",
+        "description": "SiteSense menyederhanakan location intelligence dan memberikan actionable insight. Dengan tampilan yang ramah pengguna, SiteSense membantu memberikan solusi yang cerdas, efisien, dan bebas ribet untuk bisnis Anda."
+      }
+    ]
+  },
+  "SiteHeader": {
+    "home": "Beranda",
+    "about": "Tentang SiteSense",
+    "howItWorks": "Cara Kerja",
+    "faq": "Pertanyaan Umum",
+    "scheduleDemo": "Jadwalkan Demo"
+  },
+  "SiteFooter": {
+    "language": "Bahasa",
+    "privacyPolicy": "Privasi & Kebijakan",
+    "termsConditions": "Syarat & Ketentuan",
+    "faq": "Pertanyaan Umum",
+    "contact": "Kontak",
+    "about": "Tentang SiteSense",
+    "howItWorks": "Cara Kerja",
+    "copyright": "© PT Telekomunikasi Selular, 2025."
+  }
+}

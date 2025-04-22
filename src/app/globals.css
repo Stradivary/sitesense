@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: 1 26 65; /* #011A41 */
+    --radius: 16px;
+  }
+}
+
+@font-face {
+  font-family: "TelkomselBatikSans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/TelkomselBatikSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "TelkomselBatikSans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/TelkomselBatikSans-Bold.ttf") format("ttf");
+}
+
+@layer utilities {
+  .font-batik {
+    font-family: "TelkomselBatikSans", system-ui, sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #001A41;
+}
+
+.bg-navy {
+  background-color: rgb(var(--navy));
+}
+
+.text-navy {
+  color: rgb(var(--navy));
+}

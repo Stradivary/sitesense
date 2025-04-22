@@ -1,0 +1,175 @@
+include:
+  - project: telkomsel/potloc/pipeline-template-assets/pipeline-template
+    ref: main
+    file: "fe-stages.yml"
+
+variables:
+  S2I: "true"
+  S2I_JFROG: "true"
+  NODEJS_VERSION: "20.18.0"
+  SERVICE_NAME: "potloc-landingpage"
+  LINT_REPORT_FILE: "potloc-${CI_COMMIT_SHA}--${CI_COMMIT_TIMESTAMP}"
+  DOCKERFILE_PATH: "./Dockerfile"
+  ONPREM_PRODUCT: "docker"
+  PROJECT_NAME: "potloc-landingpage"
+  HELM_REPO_PROJECT_NAME: "potloc-landingpage-kube-config"
+
+.cp-env-file: &cp-env-file
+  - cp ${ENV_FILE} .env
+  - ls -alh
+  - cat .env
+
+compile:
+  rules:
+    - when: never
+
+dockerize:
+  rules:
+    - when: never
+
+scan-image:
+  rules:
+    - when: never
+
+scan-image-verify:
+  rules:
+    - when: never
+
+push-image-jfrog:
+  rules:
+    - when: never
+
+.compile:
+  extends: compile
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      when: manual
+    - if: $CI_COMMIT_BRANCH
+      when: manual
+    - if: $CI_COMMIT_TAG
+
+compile-preprod:
+  extends: .compile
+  before_script:
+    - [*cp-env-file]
+  after_script:
+    - tar -zcf ${CI_PROJECT_NAME}-node_modules.tar.gz node_modules/
+    - tar -zcf ${CI_PROJECT_NAME}-next.tar.gz .next/
+  artifacts:
+    paths: 
+      - ${CI_PROJECT_NAME}-next.tar.gz
+      - ${CI_PROJECT_NAME}-node_modules.tar.gz
+  environment:
+    name: preprod
+
+compile-prod:
+  extends: .compile
+  before_script:
+    - [*cp-env-file]
+  after_script:
+    - tar -zcf ${CI_PROJECT_NAME}-node_modules.tar.gz node_modules/
+    - tar -zcf ${CI_PROJECT_NAME}-next.tar.gz .next/
+  artifacts:
+    paths: 
+      - ${CI_PROJECT_NAME}-next.tar.gz
+      - ${CI_PROJECT_NAME}-node_modules.tar.gz
+  environment:
+    name: preprod
+
+dockerize-preprod:
+  variables:
+    CI_SERVICE_NAME: "preprod/${CI_PROJECT_NAME}"
+    DOCKERFILE_PATH: "${DOCKERFILE_PATH}"
+  before_script:
+    - tar -xf ${CI_PROJECT_NAME}-next.tar.gz
+    - tar -xf ${CI_PROJECT_NAME}-node_modules.tar.gz
+  needs: [compile-preprod]
+
+dockerize-prod:
+  variables:
+    CI_SERVICE_NAME: "production/${CI_PROJECT_NAME}"
+    DOCKERFILE_PATH: "${DOCKERFILE_PATH}"
+  before_script:
+    - tar -xf ${CI_PROJECT_NAME}-next.tar.gz
+    - tar -xf ${CI_PROJECT_NAME}-node_modules.tar.gz
+  needs: [compile-prod]
+
+scan-image-preprod:
+  variables:
+    CI_SERVICE_NAME: "preprod/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+scan-image-prod:
+  variables:
+    CI_SERVICE_NAME: "production/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+scan-image-verify-preprod:
+  variables:
+    CI_SERVICE_NAME: "preprod/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+scan-image-verify-prod:
+  variables:
+    CI_SERVICE_NAME: "production/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+push-image-jfrog-preprod:
+  variables:
+    CI_SERVICE_NAME: "preprod/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+push-image-jfrog-prod:
+  variables:
+    CI_SERVICE_NAME: "production/${CI_PROJECT_NAME}"
+    CI_IMAGE_TAG: "${CI_PIPELINE_ID}-${CI_COMMIT_SHORT_SHA}"
+
+landingpage:preprod-bsd:
+  extends: .deploy:preprod:sit
+  environment:
+    name: preprod-sit-bsd
+    deployment_tier: staging
+  variables:
+    DEPLOY_CLUSTER: ${DEPLOY_CLUSTER_BSD}
+    CI_SERVICE_NAME: "landingpage"
+    NAMESPACE: "potloc"
+    DEPLOY_CONFIG_FILES: landingpage/preprod.yaml
+  needs: [push-image-jfrog-preprod]
+
+landingpage:preprod-tbs:
+  extends: .deploy:preprod:sit
+  environment:
+    name: preprod-sit-tbs
+    deployment_tier: staging
+  variables:
+    DEPLOY_CLUSTER: ${DEPLOY_CLUSTER_TBS}
+    CI_SERVICE_NAME: "landingpage"
+    NAMESPACE: "potloc"
+    DEPLOY_CONFIG_FILES: landingpage/preprod.yaml
+  needs: [push-image-jfrog-preprod]
+
+landingpage:production-tbs:
+  extends: .deploy:prod
+  environment:
+    name: prod-tbs
+    deployment_tier: production
+  variables:
+    DEPLOY_CLUSTER: ${DEPLOY_CLUSTER_PROD_TBS}
+    CI_SERVICE_NAME: "landingpage"
+    NAMESPACE: "potloc"
+    DEPLOY_CONFIG_FILES: landingpage/production-tbs.yaml
+  needs: [push-image-jfrog-prod]
+
+landingpage:production-bsd:
+  extends: .deploy:prod
+  environment:
+    name: prod-bsd
+    deployment_tier: production
+  variables:
+    DEPLOY_CLUSTER: ${DEPLOY_CLUSTER_PROD_BSD}
+    CI_SERVICE_NAME: "landingpage"
+    NAMESPACE: "potloc"
+    DEPLOY_CONFIG_FILES: landingpage/production-bsd.yaml
+  needs: [push-image-jfrog-prod]
+
+
