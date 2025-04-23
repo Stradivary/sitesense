@@ -9,6 +9,7 @@ export default {
   theme: {
     fontFamily: {
       'sans': ['Poppins', 'sans-serif'],
+      'poppins': ['Poppins'],
     },
     extend: {
       backgroundImage: {
@@ -19,6 +20,7 @@ export default {
         'rounded-color': "radial-gradient(50% 50% at 50% 50%, rgba(0, 101, 255, 0.25) 0%, rgba(255, 136, 138, 0.186) 50%, rgba(255, 255, 255, 0) 100%)",
         'feature-gradient': "radial-gradient(50% 50% at 50% 50%, #0067FF 0%, rgba(0, 138, 255, 0.24) 64.5%, rgba(1, 26, 65, 0) 100%)",
         'shared-gradient': "linear-gradient(330.95deg, #001028 35.29%, #0E336C 86.66%)",
+        'custom-gradient': 'linear-gradient(81.8deg, #001A41 24.95%, rgba(255, 0, 37, 0.9) 106.85%)',
       },
       dropShadow: {
         'navy': '0px -1px 30px rgba(19, 110, 247, 0.8)',
